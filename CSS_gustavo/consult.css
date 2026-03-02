@@ -137,6 +137,8 @@ main {
     height: 200px;
     border: 3px solid  #355872 ;
     border-radius: 15px;
+    margin-top: -110px;
+    margin-bottom: 20px;
 }
 
 .descricao {
@@ -144,7 +146,7 @@ main {
     text-align: justify;
     color: #000000;
     margin: 15px;
-    margin-top: 35px;
+    margin-top: 20px;
     padding: 0 25px;
 }
 
@@ -154,22 +156,28 @@ main {
 
 .section {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: flex-start;
     gap: 60px;
     text-align: center;
 }
 
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .icon img{
     width: 300px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 100px;
-    margin-top: 100px;
+    height: auto;;
 }
 
 .card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 150px;
 }
 
@@ -187,18 +195,20 @@ main {
 }
 
 .card ul {
-    list-style-type: calc(20vh - 20px);
-    list-style: #355872;
+    list-style: disc;
     padding: 0;
     color: #000000;
+    text-align: left;
+    padding-left: 25px;
+    margin-top: 15px;
+    width: 100%;
 }
 
 .card ul li {
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     position: relative;
-    padding-left: 15px;
-    text-align: justify;
+    text-align: left;
 }
 
 .card ul li::marker {
