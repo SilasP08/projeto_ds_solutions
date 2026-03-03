@@ -7,7 +7,7 @@
 body {
     font-family: Century Gothic, sans-serif;
     font-weight: 500;
-    background-color: #F7F8F0;
+    
 }
 
 .topo {
@@ -21,34 +21,6 @@ body {
     top: 0;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.212);
-}
-
-.dev-img {
-    height: 60vh;
-    min-width: 100%;
-    background-image: url(../imagem_gustavo/dev.jpg);
-    background-position: center;
-    background-size: cover;
-    
-}
-
-.dev-texto {
-    min-height: 60vh;
-    color: #F7F8F0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), rgba(10, 45, 85, 0.158);
-}
-
-.dev-texto h1 {
-    font-size: 56px;
-    color: #F7F8F0;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    margin-top: 5vh;
 }
 
 .logo {
@@ -121,22 +93,54 @@ a {
     align-items: center;
 }
 
+.dev-img {
+    height: 60vh;
+    min-width: 100%;
+    background-image: url(../imagens/integracao-de-sistemas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.dev-texto {
+    min-height: 60vh;
+    color: #F7F8F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), rgba(10, 45, 85, 0.158);
+}
+
+.dev-texto h1 {
+    font-size: 56px;
+    color: #F7F8F0;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 5vh;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    color: #F7F8F0;
     margin-top: 25vh;
 }
 
 main {
-    background-color: #F7F8F0;
+    background-image: url(../imagens/Wallpaper.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .box {
-    height: 200px;
+    height: 260px;
     border: 3px solid  #355872 ;
     border-radius: 15px;
+    margin-top: -150px;
+    margin-bottom: 20px;
 }
 
 .descricao {
@@ -144,7 +148,7 @@ main {
     text-align: justify;
     color: #000000;
     margin: 15px;
-    margin-top: 35px;
+    margin-top: 20px;
     padding: 0 25px;
 }
 
@@ -154,56 +158,66 @@ main {
 
 .section {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: flex-start;
     gap: 60px;
     text-align: center;
 }
 
-.icon img{
-    width: 200px;
-    height: 200px;
+.icon {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 70px;
-    margin-top: 190px;
+    margin-bottom: 20px;
+}
+
+.icon img{
+    width: 300px;
+    height: auto;;
 }
 
 .card {
-    margin-bottom: 150px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 .card h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
     font-weight: bold;
     color: #000000;
 }
 
 .card p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px;
     color: #355872;
 }
 
 .card ul {
-    list-style-type: calc(20vh - 20px);
-    list-style: #355872;
+    list-style: disc;
     padding: 0;
     color: #000000;
+    text-align: left;
+    padding-left: 25px;
+    margin-top: 15px;
+    width: 100%;
 }
 
 .card ul li {
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
     position: relative;
-    padding-left: 15px;
+    text-align: left;
 }
 
 .card ul li::marker {
     color: #355872;
     font-size: 1.5rem;
 }
+
 
 .container-footer {
     color: #F7F8F0;
@@ -217,6 +231,7 @@ main {
     background-color: #487da3;
     color: #F7F8F0;
     padding: 40px 0;
+    margin-top: 150px;
 }
 
 .row {

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(../imagem_gustavo/plano_fundo.jpg);
+    background-image: url(../imagens/plano_fundo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,6 +83,31 @@ a {
     height:2px;
     background:#F7F8F0;
     transition:0.3s;
+}
+
+
+.topo-direita {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.login {
+    padding: 10px 22px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #e6e6e6, #afafaf);
+    color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.856);
+    position: relative;
+    overflow: hidden;
+}
+
+.login:hover {
+    background: #7AAACE;
+    box-shadow: 0 0 15px #7AAACE;
 }
 
 .container {
