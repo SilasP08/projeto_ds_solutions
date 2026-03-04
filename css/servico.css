@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo_servicos{
+    margin-top: 30px;
+    font-family: "Shrikhand", serif;
+    text-align: center;
+    font-size: 50px;
+    color: #355872;
+}
+
+.subtitulo_servicos {
+    margin-top: 45px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.servicos{
+    margin-top: 120px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box_base{
+    margin-top: 30px;
+    width: 430px;
+    height: 500px;
+    border: solid 0px white;
+    border-radius: 20px;
+    background-color: #355872;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    transition: ease 0.5s;
+    
+}
+
+.servicos_box{
+    margin-top: 45px;
+    width: 250px;
+    height: 80px;
+    border-radius: 60px;
+    border: 0px;
+    margin-left: 100px;
+    background-color: #355872;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #f7f8f0;
+    align-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+.servicos_box:hover{
+    transition: ease 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px black;
+}
+
+.box_base p{
+    margin-top: 38px;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 22px;
+    color: #f7f8f0;
+    text-align: left;
+}
+
+.box_base a{
+    text-decoration: none;
+    margin-left: 130px;
+    margin-bottom: 15px;
+}
+
+.botao:hover{
+    transform: scale(1.03);
+    transition: ease 0.3s;
+    transform: rotateY(-8px);
+    background-color: #7aaace;
+    border: 3px solid #7aaace;
+    color: #f7f8f0;
+    box-shadow: 0 0 5px black;
+}
+
+.botao{
+    width: 125px;
+    height: 45px;
+    border: 3px solid #f7f8f0;
+    border-radius: 30px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #355872;
+    background-color: #f7f8f0;
+    cursor: pointer;
+}
+
+.box_base img{
+    margin-bottom: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.orcamento_box{
+    margin-top: 45px;
+    width: 250px;
+    height: 80px;
+    border-radius: 60px;
+    border: 0px;
+    margin-left: 100px;
+    background-color: #7aaace;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #f7f8f0;
+    align-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+.orcamento_box:hover{
+    transition: ease 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px black;
+
+}

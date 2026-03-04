@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Solutions</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="titulo_servicos">Nossos Serviços</div>
+
+        <div class="subtitulo_servicos"> “Soluções tecnológicas inteligentes para transformar desafios em crescimento e resultados reais.” </div>
+
+        <div class="servicos">
+
+            <div class="box_base">
+                <p class="msg_base" id="mensagem_base"> <img src="./imagem/negocios.jpg"/> Oferecemos soluções completas em consultoria e desenvolvimento de sistemas, com foco em inovação, eficiência e resultados. Nosso objetivo é entender as necessidades do seu negócio e transformar desafios em soluções tecnológicas práticas e personalizadas.</p>
+                
+                <p class="servico1" id="mensagem1" style="display:none;"> <b>Desenvolvimento de sistemas sob medida</b> <br><br>Desenvolvemos sistemas personalizados de acordo com as necessidades específicas de cada cliente, considerando seus processos, objetivos e desafios. Atuamos desde o levantamento de requisitos até a implantação final, criando soluções web, desktop ou mobile com foco em performance, segurança e escalabilidade. <br><br> <a href="index.html"><button class="botao">Saiba Mais</button></a></p> 
+
+                <p class="servico2" id="mensagem2" style="display:none;"> <b>Consultoria em Transformação Digital</b> <br><br>Apoiamos empresas no processo de modernização e inovação tecnológica, analisando processos internos e identificando oportunidades de melhoria. Nossa consultoria envolve diagnóstico estratégico, planejamento de soluções e acompanhamento da implementação de novas tecnologias. <br><br> <a href="index.html"><button class="botao">Saiba Mais</button></a></p>
+
+                <p class="servico3" id="mensagem3" style="display:none;"> <b>Integração de Sistemas</b> <br><br>Realizamos a integração entre diferentes sistemas e plataformas, garantindo que as informações fluam de forma segura e eficiente entre setores e ferramentas. Seja conectando ERPs, CRMs, APIs ou sistemas legados, nosso trabalho elimina retrabalho, reduz falhas operacionais,e centraliza dados estratégicos. <br><br><br> <a href="index.html"><button class="botao">Saiba Mais</button></a></p>
+
+                <p class="servico4" id="mensagem4" style="display:none;"> <b>Implantação e Customização de ERPs e CRMs</b> <br><br>Oferecemos serviços completos de implantação, parametrização e customização de sistemas de gestão empresarial (ERP) e relacionamento com clientes (CRM). Adaptamos as ferramentas à realidade do negócio, treinamos equipes e acompanhamos todo o processo de transição, garantindo o proveito máximo da solução. <br><br> <a href="index.html"><button class="botao">Saiba Mais</button></a></p>
+
+                <p class="servico5" id="mensagem5" style="display:none;"> <b>Suporte Técnico e Manutenção Evolutiva</b> <br><br> Prestamos suporte contínuo e manutenção preventiva e evolutiva para assegurar que os sistemas permaneçam estáveis, seguros e atualizados. Atuamos na correção de falhas, melhorias de desempenho, atualizações tecnológicas e implementação de novas funcionalidades conforme a empresa cresce. <br><br> <a href="index.html"><button class="botao">Saiba Mais</button></a></p>
+            </div>
+    
+            <div class="linha">
+
+                <a onclick="mostrar1()"> <div class="servicos_box">Desenvolvimento de sistemas sob medida</div> </a>
+
+                <a onclick="mostrar2()"> <div class="servicos_box">Consultoria em Transformação Digital</div> </a>
+
+                <a onclick="mostrar3()"><div class="servicos_box">Integração de Sistemas</div></a>
+            </div>
+
+            <div class="linha">
+                <a onclick="mostrar4()"> <div class="servicos_box">Implantação e Customização de ERPs e CRMs</div> </a>
+
+                <a onclick="mostrar5()"><div class="servicos_box">Suporte Técnico e Manutenção Evolutiva</div></a>
+
+                <div class="orcamento_box">Faça seu orçamento</div>
+            </div>
+        
+            <script>
+                function mostrar1() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "block";
+                    document.getElementById("mensagem2").style.display = "none";
+                    document.getElementById("mensagem3").style.display = "none";
+                    document.getElementById("mensagem4").style.display = "none";
+                    document.getElementById("mensagem5").style.display = "none";
+                }
+
+                
+                function mostrar2() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "none";
+                    document.getElementById("mensagem2").style.display = "block";
+                    document.getElementById("mensagem3").style.display = "none";
+                    document.getElementById("mensagem4").style.display = "none";
+                    document.getElementById("mensagem5").style.display = "none";
+                }
+
+                function mostrar3() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "none";
+                    document.getElementById("mensagem2").style.display = "none";
+                    document.getElementById("mensagem3").style.display = "block";
+                    document.getElementById("mensagem4").style.display = "none";
+                    document.getElementById("mensagem5").style.display = "none";
+                }
+
+                function mostrar4() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "none";
+                    document.getElementById("mensagem2").style.display = "none";
+                    document.getElementById("mensagem3").style.display = "none";
+                    document.getElementById("mensagem4").style.display = "block";
+                    document.getElementById("mensagem5").style.display = "none";
+                }
+
+                function mostrar5() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "none";
+                    document.getElementById("mensagem2").style.display = "none";
+                    document.getElementById("mensagem3").style.display = "none";
+                    document.getElementById("mensagem4").style.display = "none";
+                    document.getElementById("mensagem5").style.display = "block";
+                }
+            </script>
+
+        </div>
+
+    </main>
+    
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DS Consultorias</title>
+        <link rel="stylesheet" href="css/contato.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <h1>Segurança e clareza para suas tomadas de decisão.</h1>
+        <h1 class="title">Faça seu orçamento</h1>
+
+        <div class="container">
+
+            <div class="card">
+                <h2>Preencha as informações a seguir:</h2>
+                <form action="">
+                    <input type="text" placeholder="Nome completo">
+                    <input type="email" placeholder="E-mail">
+
+                    <select name="Serviços Desejados" id="Seletor">
+                        <option value="">Serviços Desejados</option>
+                        <option value="">Desenvolvimento de Sistemas Sob Medida</option>
+                        <option value="">Consultoria em Transformação Digital</option>
+                        <option value="">Integração de Sistemas</option>
+                        <option value="">Implantação e Customização de ERPs e CRMs</option>
+                        <option value="">Suporte Técnico e Manutenção Evolutiva</option>
+                    </select>
+                    
+                    <select name="Seletor de Urgência" id="Seletor">
+                        <option value="">Seletor de Urgência</option>
+                        <option value="">Muito Urgente</option>
+                        <option value="">Urgente</option>
+                        <option value="">Médio</option>
+                        <option value="">Pouco Urgente</option>
+                    </select>
+                    
+                    <div class="enviar-btns">
+                        <input type="submit" placeholder="Enviar" class="submit-btn" onclick="alert('Dados enviado com sucesso!')">
+                        <input type="reset" placeholder="Limpar" class="submit-btn" onclick="alert('Dados limpos com sucesso!')">
+                    </div>
+                    
+                </form>
+                
+            </div>
+
+            <div>
+                <textarea placeholder="Envie sua mensagem"></textarea><br>
+
+                <a class="whatsapp-button" href="https://api.whatsapp.com/send/?phone=5511930569806&text&type=phone_number&app_absent=0">
+                    <i class="bi bi-whatsapp"></i> Mais Informações
+                </a>
+
+                <div class="contato-info">
+                    <h3>Outros meios de contato:</h3>
+                    <p> <i class="bi bi-instagram"></i> @ds_solutions</p>
+                    <p> <i class="bi bi-envelope"></i> contato@dssolutions.inf.br</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+body{
+    background: url(../imagem/fundoTecnologia.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 105vh;
+}
+
+.fundo {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100vh;
+    width: 100%;
+}
+
+.box {
+    margin-top: 20vh;
+    text-align: center;
+    justify-content: center;
+    width: 475px;
+    height: 600px;
+    border: 2px solid #f7f8f0;
+    border-radius: 20px;
+    background-color: #355872cc;
+    display: flex;
+}
+
+.texto-form{
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7f8f0;
+    margin-top: 30px;
+}
