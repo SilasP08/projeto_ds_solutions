@@ -39,86 +39,90 @@
     <main>
         <section>
             <div class="container">
-                <div class="box">
-                    <div class="descricao">
-                        <span>Desenvolvimento de Sistemas Sob Medida</span> é a criação de softwares personalizados
-                        (web, desktop ou mobile), desenvolvidos sob medida para atender às necessidades específicas de
-                        cada cliente. Nossas soluções são planejadas com foco em eficiência, escalabilidade e
-                        usabilidade, garantindo melhor desempenho, otimização de processos e resultados alinhados aos
-                        objetivos do negócio.
-                    </div>
-                </div>
-
                 <section>
-                    <div class="section">
-                        <div class="card">
-                            <div class="icon">
-                                <img src="imagens/plane.png" alt="planejamento">
-                            </div>
-                            <h3>PLANEJAMENTO</h3>
-
-                            <p>Realizamos um estudo inicial para compreender as necessidades do cliente e os objetivos
-                                do negócio, garantindo que o sistema seja desenvolvido de forma organizada e eficiente.
-                            </p>
-
-                            <ul>
-                                <li>
-                                    Levantamento e análise de requisitos
-                                </li>
-                                <li>
-                                    Definição de escopo e funcionalidades
-                                </li>
-                                <li>
-                                    Planejamento de arquitetura e tecnologias
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="icon">
-                                <img src="imagens/icon2.png" alt="desenvolvimento">
-                            </div>
-                            <h3>DESENVOLVIMENTO DE SISTEMA</h3>
-
-                            <p>Com base no planejamento, iniciamos a criação do software utilizando tecnologias modernas
-                                e boas práticas de programação. Desenvolvemos soluções seguras, escaláveis e alinhadas
-                                às demandas específicas de cada cliente.</p>
-
-                            <ul>
-                                <li>
-                                    Desenvolvimento Web, Desktop e Mobile
-                                </li>
-                                <li>
-                                    Integração com bancos de dados e APIs
-                                </li>
-                                <li>
-                                    Foco em performance, segurança e usabilidade
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="icon">
-                                <img src="imagens/icon3.png">
-                            </div>
-
-                            <h3>IMPLANTAÇÃO E SERVIÇO</h3>
-
-                            <p>Após o desenvolvimento, realizamos testes rigorosos e acompanhamos a implementação do
-                                sistema. Também oferecemos suporte contínuo para garantir estabilidade, atualizações e
-                                evolução da solução.</p>
-
-                            <ul>
-                                <li>
-                                    Testes e validações completas
-                                </li>
-                                <li>
-                                    Treinamento para usuários
-                                </li>
-                                <li>
-                                    Manutenção e suporte técnico contínuo
-                                </li>
-                            </ul>
+                    <div class="box">
+                        <div class="descricao">
+                            <span>Desenvolvimento de Sistemas Sob Medida</span> é a criação de softwares personalizados
+                            (web, desktop ou mobile), desenvolvidos sob medida para atender às necessidades específicas
+                            de
+                            cada cliente. Nossas soluções são planejadas com foco em eficiência, escalabilidade e
+                            usabilidade, garantindo melhor desempenho, otimização de processos e resultados alinhados
+                            aos
+                            objetivos do negócio.
                         </div>
                     </div>
+
+                    <section>
+                        <div class="card">
+                            <div class="box-list">
+                                <img src="imagens/icon1.png" alt="planejamento" class="icon">
+
+                                <h3>PLANEJAMENTO</h3>
+
+                                <p>Realizamos um estudo inicial para compreender as necessidades do cliente e os
+                                    objetivos
+                                    do negócio, garantindo que o sistema seja desenvolvido de forma organizada e
+                                    eficiente.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        Levantamento e análise de requisitos
+                                    </li>
+                                    <li>
+                                        Definição de escopo e funcionalidades
+                                    </li>
+                                    <li>
+                                        Planejamento de arquitetura e tecnologias
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box-list">
+                                <img src="imagens/icon2.png" alt="desenvolvimento" class="icon">
+                                <h3>DESENVOLVIMENTO DE SISTEMA</h3>
+
+                                <p>Com base no planejamento, iniciamos a criação do software utilizando tecnologias
+                                    modernas
+                                    e boas práticas de programação. Desenvolvemos soluções seguras, escaláveis e
+                                    alinhadas
+                                    às demandas específicas de cada cliente.</p>
+
+                                <ul>
+                                    <li>
+                                        Desenvolvimento Web, Desktop e Mobile
+                                    </li>
+                                    <li>
+                                        Integração com bancos de dados e APIs
+                                    </li>
+                                    <li>
+                                        Foco em performance, segurança e usabilidade
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box-list">
+                                <img src="imagens/icon3.png" alt="implantacao" class="icon">
+
+                                <h3>IMPLANTAÇÃO E SERVIÇO</h3>
+
+                                <p>Após o desenvolvimento, realizamos testes rigorosos e acompanhamos a implementação do
+                                    sistema. Também oferecemos suporte contínuo para garantir estabilidade, atualizações
+                                    e
+                                    evolução da solução.</p>
+
+                                <ul>
+                                    <li>
+                                        Testes e validações completas
+                                    </li>
+                                    <li>
+                                        Treinamento para usuários
+                                    </li>
+                                    <li>
+                                        Manutenção e suporte técnico contínuo
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </div>
         </section>
@@ -184,5 +188,17 @@
         </div>
     </footer>
 </body>
+
+<script>
+    window.onscroll = function () {
+        const header = document.querySelector('.topo');
+
+        if (window.scrollY > 350) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    };
+</script>
 
 </html>
