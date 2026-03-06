@@ -92,7 +92,7 @@ a {
     
 }
 
-.login {
+.orcamento {
     padding: 10px 22px;
     text-decoration: none;
     background: linear-gradient(45deg, #e6e6e6, #afafaf);
@@ -104,7 +104,7 @@ a {
     position: relative;
 }
 
-.login:hover {
+.orcamento:hover {
     background: #7AAACE;
     box-shadow: 0 0 15px #7AAACE;
 }

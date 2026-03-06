@@ -7,6 +7,7 @@
 body {
     font-family: Century Gothic, sans-serif;
     font-weight: 500;
+    
 }
 
 .topo {
@@ -24,7 +25,7 @@ body {
 }
 
 .topo.scrolled {
-    background-color: rgb(3, 3, 33);
+    background-color: rgba(3, 3, 33);
     transition: 0.1s;
 }
 
@@ -110,13 +111,20 @@ a {
     box-shadow: 0 0 15px #7AAACE;
 }
 
+
+.opcao {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
 .dev-img {
     height: 60vh;
     min-width: 100%;
-    background-image: url(../imagens/dev.jpg);
+    background-image: url(../imagens/implantacao.png);
     background-position: center;
     background-size: cover;
-    
 }
 
 .dev-texto {
@@ -126,22 +134,22 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 35px;
+
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), rgba(10, 45, 85, 0.158);
 }
 
-.opcao {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    align-items: center;
+.dev-texto h1 {
+    font-size: 56px;
+    color: #F7F8F0;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 5vh;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    color: #F7F8F0;
     margin-top: 25vh;
 }
 
@@ -150,7 +158,7 @@ main {
 }
 
 .box {
-    height: 200px;
+    height: 170px;
     border: 3px solid  #355872 ;
     border-radius: 15px;
     margin-top: -150px;
@@ -162,7 +170,7 @@ main {
     text-align: justify;
     color: #000000;
     margin: 15px;
-    margin-top: 35px;
+    margin-top: 20px;
     padding: 0 25px;
 }
 
@@ -189,7 +197,7 @@ main {
 .box-list {
     border: 3px solid #105688;
     color: #105688;
-    height: 650px;
+    height: 550px;
     width: 400px;
     border-radius: 15px;
     margin-top: 25px;
@@ -223,10 +231,6 @@ main {
     padding-left: 15px;
 }
 
-.icon img{
-    width: 200px;
-    height: 200px;
-}
 
 .container-footer {
     color: #F7F8F0;
@@ -240,7 +244,7 @@ main {
     background: linear-gradient(360deg, rgb(3, 3, 33), rgb(5, 5, 54));
     color: #F7F8F0;
     padding: 40px 0;
-    margin-top: 150px;
+    margin-top: 20px;
 }
 
 .row {
