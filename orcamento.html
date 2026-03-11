@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Solutions - Oraçamento</title>
+    <link rel="stylesheet" href="css/orcamento.css">
+    <link rel="icon" href="imagens/logo_branca.png">
+</head>
+
+<body>
+    <header class="topo">
+        <div>
+            <a href="home.html">
+                <img src="imagens/logo_branca.png" class="logo" alt="consultoria">
+            </a>
+        </div>
+
+        <nav class="menu">
+            <ul class="opcao">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="servico.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="orcamento">
+
+            <h1 class="titulo">Simulador de Orçamento</h1>
+
+            <p class="descricao-orcamento">
+                Escolha o tipo de porte do projeto para visualizar uma estimativa de investimento e prazo de
+                desenvolvimento.
+                Os valores apresentados são aproximados e podem variar conforme a complexidade e necessidades do seu
+                negócio.
+            </p>
+
+            <div class="tabela-orcamento">
+
+                <div class="linha-cabecalho">
+                    <div>Serviço</div>
+                    <div>Tipo</div>
+                    <div>Preço</div>
+                    <div>Prazo</div>
+                </div>
+
+                <div class="linha">
+                    <div>Desenvolvimento de Sistemas Sob Medida</div>
+
+                    <div>
+                        <select onchange="mudarItens0()">
+                            <option>Escolha o Porte</option>
+                            <option>Pequeno Porte</option>
+                            <option>Médio Porte</option>
+                            <option>Grande Porte</option>
+                        </select>
+                    </div>
+
+                    <div class="preco" id="preco0">R$ 5.000 - 50.000</div>
+                    <div class="prazo" id="prazo0">4 - 8 meses</div>
+
+                </div>
+
+                <div class="linha">
+                    <div>Consultoria em Transformação Digital</div>
+
+                    <div>
+                        <select onchange="mudarItens1()">
+                            <option>Escolha o Porte</option>
+                            <option>Pequeno Porte</option>
+                            <option>Médio Porte</option>
+                            <option>Grande Porte</option>
+                        </select>
+                    </div>
+
+                    <div class="preco" id="preco1">R$ 9.000 - 65.000</div>
+                    <div class="prazo" id="prazo1">2 - 6 meses</div>
+
+                </div>
+
+                <div class="linha">
+                    <div>Integração de Sistemas</div>
+
+                    <div>
+                        <select onchange="mudarItens2()">
+                            <option>Escolha o Porte</option>
+                            <option>Pequeno Porte</option>
+                            <option>Médio Porte</option>
+                            <option>Grande Porte</option>
+                        </select>
+                    </div>
+
+                    <div class="preco" id="preco2">R$ 15.000 - 90.000</div>
+                    <div class="prazo" id="prazo2">6 - 9 meses</div>
+
+                </div>
+
+                <div class="linha">
+                    <div>Implantação e Customização de ERPs e CRMs</div>
+
+                    <div>
+                        <select onchange="mudarItens3()">
+                            <option>Escolha o Porte</option>
+                            <option>Pequeno Porte</option>
+                            <option>Médio Porte</option>
+                            <option>Grande Porte</option>
+                        </select>
+                    </div>
+
+                    <div class="preco" id="preco3">R$ 25.000 - 110.000</div>
+                    <div class="prazo" id="prazo3">3 - 12 meses</div>
+
+                </div>
+
+                <div class="linha">
+                    <div>Suporte Técnico e Manutenção Evolutiva</div>
+
+                    <div>
+                        <select onchange="mudarItens4()">
+                            <option>Escolha o Porte</option>
+                            <option>Pequeno Porte</option>
+                            <option>Médio Porte</option>
+                            <option>Grande Porte</option>
+                        </select>
+                    </div>
+
+                    <div class="preco" id="preco4">R$ 5.000 - 50.000</div>
+                    <div class="prazo" id="prazo4">4 - 8 meses</div>
+
+                </div>
+
+            </div>
+
+            <div class="cta-orcamento">
+            <a href="contato.html" class="botao-orcamento" target="_blank">
+                Solicitar orçamento personalizado
+            </a>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-footer">
+                        <h4>Serviços</h4>
+                        <ul class="lista">
+                            <a href="dev.html">
+                                <li>Desenvolvimento de Sistemas Sob Medida</li>
+                            </a>
+
+                            <a href="consult.html">
+                                <li>Consultoria em Transformação Digital</li>
+                            </a>
+                            <a href="integracao.html">
+                                <li>Integração de Sistemas</li>
+                            </a>
+                            <a href="implantacao.html">
+                                <li>Implantação e Customização de ERPs e CRMs</li>
+                            </a>
+                            <a href="suporte.html">
+                                <li>Surporte Técnico e Manutenção Evolutiva</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-footer">
+                        <h4>Contato</h4>
+                        <ul class="lista">
+                            <li>contato@dssolutions.inf.br</li>
+                            <li>(11) 93056-9806</li>
+                            <li>
+                                <a href="https://www.instagram.com/euu.faccio/"><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a
+                                    href="https://api.whatsapp.com/send/?phone=5511930569806&text&type=phone_number&app_absent=0"><i
+                                        class="bi bi-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-footer">
+                        <h4>Endereço</h4>
+                        <ul class="lista">
+                            <li>
+                                <a class="endereco"
+                                    href="https://www.google.com/maps/place/R.+Santo+Andr%C3%A9,+680+-+Boa+Vista,+S%C3%A3o+Caetano+do+Sul+-+SP,+09572-000/@-23.6481439,-46.5610715,15.75z/data=!4m6!3m5!1s0x94ce4328ea92757b:0xccca50dd4902033b!8m2!3d-23.6441746!4d-46.5582895!16s%2Fg%2F11dzsc5qnj?hl=pt-br&entry=ttu&g_ep=EgoyMDI2MDIyMy4wIKXMDSoASAFQAw%3D%3D">
+                                    <span class="sp">São Paulo <br></span>
+                                    R. Santo André, 680
+                                    <pre>Boa Vista, São Caetano do Sul</pre> SP, 09572-000
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="barra">
+            <div class="logo-footer">
+                <img src="imagens/logo_tudo.png" class="logo-baixo">
+
+                <p class="paragrafo-footer">© 2026 - DS Solutions</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function mudarItens0() {
+        let select = document.getElementsByTagName("select")[0]
+        let preco = document.getElementById("preco0")
+        let prazo = document.getElementById("prazo0")
+
+        if (select.value == "Escolha o Porte") {
+            preco.innerText = "R$ 5.000 - 50.000"
+            prazo.innerText = "4 - 8 Meses"
+        }
+
+        else if (select.value == "Pequeno Porte") {
+            preco.innerText = "R$5.000 - 15.000"
+            prazo.innerText = "4 - 5 meses"
+        }
+
+        else if (select.value == "Médio Porte") {
+            preco.innerText = "R$15.000 - 50.000"
+            prazo.innerText = "5 - 6 meses"
+        }
+
+        else if (select.value == "Grande Porte") {
+            preco.innerText = "R$50.000+"
+            prazo.innerText = "7 - 8 meses"
+        }
+    }
+
+    function mudarItens1() {
+        let select = document.getElementsByTagName("select")[1]
+        let preco = document.getElementById("preco1")
+        let prazo = document.getElementById("prazo1")
+
+        if (select.value == "Escolha o Porte") {
+            preco.innerText = "R$ 9.000 - 65.000"
+            prazo.innerText = "2 - 6 Meses"
+        }
+
+        else if (select.value == "Pequeno Porte") {
+            preco.innerText = "R$9.000 - 27.000"
+            prazo.innerText = "2 - 3 meses"
+        }
+
+        else if (select.value == "Médio Porte") {
+            preco.innerText = "R$ 27.000 - 65.000"
+            prazo.innerText = "3 - 4 meses"
+        }
+
+        else if (select.value == "Grande Porte") {
+            preco.innerText = "R$65.000+"
+            prazo.innerText = "4 - 6 meses"
+        }
+    }
+
+    function mudarItens2() {
+        let select = document.getElementsByTagName("select")[2]
+        let preco = document.getElementById("preco2")
+        let prazo = document.getElementById("prazo2")
+
+        if (select.value == "Escolha o Porte") {
+            preco.innerText = "R$ 15.000 - 90.000"
+            prazo.innerText = "6 - 9 Meses"
+        }
+
+        else if (select.value == "Pequeno Porte") {
+            preco.innerText = "R$15.000 - 45.000"
+            prazo.innerText = "6 - 7 meses"
+        }
+
+        else if (select.value == "Médio Porte") {
+            preco.innerText = "R$45.000 - 90.000"
+            prazo.innerText = "7 - 8 meses"
+        }
+
+        else if (select.value == "Grande Porte") {
+            preco.innerText = "R$90.000+"
+            prazo.innerText = "8 - 9 meses"
+        }
+    }
+
+    function mudarItens3() {
+        let select = document.getElementsByTagName("select")[3]
+        let preco = document.getElementById("preco3")
+        let prazo = document.getElementById("prazo3")
+
+        if (select.value == "Escolha o Porte") {
+            preco.innerText = "R$ 25.000 - 110.000"
+            prazo.innerText = "3 - 12 Meses"
+        }
+
+        else if (select.value == "Pequeno Porte") {
+            preco.innerText = "R$25.000 - 65.000"
+            prazo.innerText = "3 - 6 meses"
+        }
+
+        else if (select.value == "Médio Porte") {
+            preco.innerText = "R$65.000 - 110.000"
+            prazo.innerText = "4 - 8 meses"
+        }
+
+        else if (select.value == "Grande Porte") {
+            preco.innerText = "R$110.000+"
+            prazo.innerText = "8 - 12 meses"
+        }
+    }
+
+    function mudarItens4() {
+        let select = document.getElementsByTagName("select")[4]
+        let preco = document.getElementById("preco4")
+        let prazo = document.getElementById("prazo4")
+
+        if (select.value == "Escolha o Porte") {
+            preco.innerText = "R$ 5.000 - 50.000"
+            prazo.innerText = "4 - 8 Meses"
+        }
+
+        else if (select.value == "Pequeno Porte") {
+            preco.innerText = "R$5.000 - 15.000"
+            prazo.innerText = "3 - 6 meses"
+        }
+
+        else if (select.value == "Médio Porte") {
+            preco.innerText = "R$15.000 - 50.000"
+            prazo.innerText = "3 - 6 meses"
+        }
+
+        else if (select.value == "Grande Porte") {
+            preco.innerText = "R$50.000+"
+            prazo.innerText = "3 - 6 meses"
+        }
+    }
+
+    window.onscroll = function () {
+        const header = document.querySelector('.topo');
+
+        if (window.scrollY > 350) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    };
+
+</script>
+</html>

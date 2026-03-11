@@ -7,6 +7,10 @@
 body {
     font-family: Century Gothic, sans-serif;
     font-weight: 500;
+    background-image: url(../imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .topo {
@@ -86,7 +90,6 @@ a {
     transition:0.3s;
 }
 
-
 .topo-direita {
     display: flex;
     justify-content: flex-end;
@@ -96,31 +99,30 @@ a {
 .orcamento {
     padding: 10px 22px;
     text-decoration: none;
-    background: linear-gradient(45deg, #e6e6e6, #afafaf);
+    background: linear-gradient(45deg, #e6e6e6, #cce1ff);
     color: black;
     border-radius: 30px;
     font-weight: bold;
     font-size: 16px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.856);
-    position: relative;
 }
 
 .orcamento:hover {
-    background: #7AAACE;
+    background: linear-gradient(45deg, #7AAACE, #cce1ff);
     box-shadow: 0 0 15px #7AAACE;
+    color: #ffffff;
 }
 
 .dev-img {
-    height: 60vh;
+    height: 100vh;
     min-width: 100%;
     background-image: url(../imagens/dev.jpg);
     background-position: center;
     background-size: cover;
-    
 }
 
 .dev-texto {
-    min-height: 60vh;
+    min-height: 100vh;
     color: #F7F8F0;
     display: flex;
     justify-content: center;
@@ -150,11 +152,13 @@ main {
 }
 
 .box {
+    background-color: #ffffff;
     height: 200px;
     border: 3px solid  #355872 ;
     border-radius: 15px;
     margin-top: -150px;
     margin-bottom: 20px;
+    box-shadow: 0 0 15px rgb(20, 20, 104);
 }
 
 .descricao {
@@ -187,12 +191,19 @@ main {
 }
 
 .box-list {
+    background-color: #ffffff;
     border: 3px solid #105688;
     color: #105688;
     height: 650px;
     width: 400px;
     border-radius: 15px;
     margin-top: 25px;
+    box-shadow: 0 0 15px rgb(20, 20, 104);
+}
+
+.box-list:hover {
+    transition: 0.2s ease;
+    transform: scale(1.03);
 }
 
 .box-list h3 {
@@ -240,7 +251,7 @@ main {
     background: linear-gradient(360deg, rgb(3, 3, 33), rgb(5, 5, 54));
     color: #F7F8F0;
     padding: 40px 0;
-    margin-top: 150px;
+    margin-top: -68px;
 }
 
 .row {
@@ -269,6 +280,11 @@ main {
 .col-footer li {
     list-style-type: none;
     margin-top: 15px;
+}
+
+.col-footer li:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
 }
 
 .col-footer i {
