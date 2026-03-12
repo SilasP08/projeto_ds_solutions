@@ -23,7 +23,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1001;
     background-color: rgba(3, 3, 33);
 }
 
@@ -179,11 +179,21 @@ select:focus {
     font-weight: 600;
     transition: 0.3s;
     height: 50px;
+    border: none;
+    font-size: 16px;
 }
 
 .botao-orcamento:hover {
     background: #1b6ed1;
     transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+#popup {
+    position: fixed;
+    z-index: 1000;
 }
 
 .container-footer {
@@ -222,6 +232,7 @@ select:focus {
     padding: 20px;
     justify-content: space-between;
     font-weight: 500;
+    font-family: Century Gothic, sans-serif;
 }
 
 .col-footer li {
