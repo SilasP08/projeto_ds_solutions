@@ -4,87 +4,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ds Solution</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Home - DS Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./imagens/logo_branca.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <div class="titulo">
-        Nossos Clientes
-    </div>
-    <div class="texto">
-        <b>Conheça algumas das empresas parceiras que <br>confiam nas nossas solucioções</b>
-    </div>
-    <div class="centro">
-        <div class="carrossel">
-            <div class="grupo">
-                <div class="imagem">
-                    <img src="./imagens/chevrolet.png" class="padrao">
+    <header class="topo">
+        <div>
+            <a href="index.html"><img src="imagens/logo_branca.png" class="logo" alt="consultoria"></a>
+        </div>
+        <nav class="menu">
+            <ul class="opcao">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="topo-direita">
+            <a href="login.html" class="orcamento-botao">Orçamento</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="inicio">
+            <section>
+                <div class="container-home">
+                    <div class="texto">
+                        <pre>A consultoria que transfoma o seu negócio</pre>
+                    </div>
+
+                <div class="botao-saibamais">
+                    Saiba Mais
                 </div>
-                <div class="imagem">
-                    <img src="./imagens/govfederal.png" class="padrao">
                 </div>
-                <div class="imagem">
-                    <img src="./imagens/nintendo.png" class="padrao">
+            </section>
+    </section>
+
+    
+
+    <section class="servicos" id="servicos">
+        <div class="background-servicos">
+
+        <div class="titulo_servicos">────── Nossos Serviços ─────</div>
+
+        <div class="subtitulo_servicos"> “Soluções tecnológicas inteligentes para transformar desafios em crescimento e resultados reais.” </div>
+
+        <div class="servicos-area">
+
+            <div class="box_base">
+                <p class="msg_base" id="mensagem_base"> <img src="./imagens/negocios.jpg"/> Oferecemos soluções completas em consultoria e desenvolvimento de sistemas, com foco em inovação, eficiência e resultados. Nosso objetivo é entender as necessidades do seu negócio e transformar desafios em soluções tecnológicas práticas e personalizadas.</p>
+                
+                <p class="servico1" id="mensagem1" style="display:none;"> <b>Desenvolvimento de sistemas sob medida</b> <br><br>Desenvolvemos sistemas personalizados de acordo com as necessidades específicas de cada cliente, considerando seus processos, objetivos e desafios. Atuamos desde o levantamento de requisitos até a implantação final, criando soluções web, desktop ou mobile com foco em performance, segurança e escalabilidade. <br><br> <a href="dev.html"><button class="botao">Saiba Mais</button></a></p> 
+
+                <p class="servico2" id="mensagem2" style="display:none;"> <b>Consultoria em Transformação Digital</b> <br><br>Apoiamos empresas no processo de modernização e inovação tecnológica, analisando processos internos e identificando oportunidades de melhoria. Nossa consultoria envolve diagnóstico estratégico, planejamento de soluções e acompanhamento da implementação de novas tecnologias. <br><br> <a href="consult.html"><button class="botao">Saiba Mais</button></a></p>
+
+                <p class="servico3" id="mensagem3" style="display:none;"> <b>Integração de Sistemas</b> <br><br>Realizamos a integração entre diferentes sistemas e plataformas, garantindo que as informações fluam de forma segura e eficiente entre setores e ferramentas. Seja conectando ERPs, CRMs, APIs ou sistemas legados, nosso trabalho elimina retrabalho, reduz falhas operacionais,e centraliza dados estratégicos. <br><br><br> <a href="integracao.html"><button class="botao">Saiba Mais</button></a></p>
+
+                <p class="servico4" id="mensagem4" style="display:none;"> <b>Implantação e Customização de ERPs e CRMs</b> <br><br>Oferecemos serviços completos de implantação, parametrização e customização de sistemas de gestão empresarial (ERP) e relacionamento com clientes (CRM). Adaptamos as ferramentas à realidade do negócio, treinamos equipes e acompanhamos todo o processo de transição, garantindo o proveito máximo da solução. <br><br> <a href="index.html"><button class="botao">Saiba Mais</button></a></p>
+
+                <p class="servico5" id="mensagem5" style="display:none;"> <b>Suporte Técnico e Manutenção Evolutiva</b> <br><br> Prestamos suporte contínuo e manutenção preventiva e evolutiva para assegurar que os sistemas permaneçam estáveis, seguros e atualizados. Atuamos na correção de falhas, melhorias de desempenho, atualizações tecnológicas e implementação de novas funcionalidades conforme a empresa cresce. <br><br> <a href="index.html"><button class="botao">Saiba Mais</button></a></p>
+            </div>
+    
+            <div class="linha-servicos">
+
+                <a onclick="mostrar1()"> <div class="servicos_box">Desenvolvimento de sistemas sob medida</div> </a>
+
+                <a onclick="mostrar2()"> <div class="servicos_box">Consultoria em Transformação Digital</div> </a>
+
+                <a onclick="mostrar3()"><div class="servicos_box">Integração de Sistemas</div></a>
+            </div>
+
+            <div class="linha-servicos">
+                <a onclick="mostrar4()"> <div class="servicos_box">Implantação e Customização de ERPs e CRMs</div> </a>
+
+                <a onclick="mostrar5()"><div class="servicos_box">Suporte Técnico e Manutenção Evolutiva</div></a>
+
+                <a><div class="orcamento_box">Faça seu orçamento</div></a>
+            </div>
+        
+            <script>
+                function mostrar1() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "block";
+                    document.getElementById("mensagem2").style.display = "none";
+                    document.getElementById("mensagem3").style.display = "none";
+                    document.getElementById("mensagem4").style.display = "none";
+                    document.getElementById("mensagem5").style.display = "none";
+                }
+
+                
+                function mostrar2() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "none";
+                    document.getElementById("mensagem2").style.display = "block";
+                    document.getElementById("mensagem3").style.display = "none";
+                    document.getElementById("mensagem4").style.display = "none";
+                    document.getElementById("mensagem5").style.display = "none";
+                }
+
+                function mostrar3() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "none";
+                    document.getElementById("mensagem2").style.display = "none";
+                    document.getElementById("mensagem3").style.display = "block";
+                    document.getElementById("mensagem4").style.display = "none";
+                    document.getElementById("mensagem5").style.display = "none";
+                }
+
+                function mostrar4() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "none";
+                    document.getElementById("mensagem2").style.display = "none";
+                    document.getElementById("mensagem3").style.display = "none";
+                    document.getElementById("mensagem4").style.display = "block";
+                    document.getElementById("mensagem5").style.display = "none";
+                }
+
+                function mostrar5() {
+                    document.getElementById("mensagem_base").style.display = "none";
+                    document.getElementById("mensagem1").style.display = "none";
+                    document.getElementById("mensagem2").style.display = "none";
+                    document.getElementById("mensagem3").style.display = "none";
+                    document.getElementById("mensagem4").style.display = "none";
+                    document.getElementById("mensagem5").style.display = "block";
+                }
+
+                window.onscroll = function() {
+                    const header = document.querySelector('.topo');                
+                    
+                    if (window.scrollY > 350) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled')
+                    }
+                }
+            </script>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="colaboradores" id="colaboradores">
+
+        <div class="background-colaboradores">
+            <div class="titulo-colaboradores">
+            ───── Nossos Clientes ─────
+        </div>
+        <div class="texto-colaboradores">
+            <b>Conheça algumas das empresas parceiras que <br>confiam nas nossas solucioções</b>
+        </div>
+        <div class="centro-colaboradores">
+            <div class="carrossel-colaboradores">
+                <div class="grupo-colaboradores">
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/chevrolet.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/govfederal.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/nintendo.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/samsung.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/senai.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/assai.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/mercado.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/usp-logo-png-1.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/Sedex_logo.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/folha-sp.png" class="padrao">
+                    </div>
                 </div>
-                <div class="imagem">
-                    <img src="./imagens/samsung.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/senai.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/assai.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/mercado.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/usp-logo-png-1.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/Sedex_logo.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/folha-sp.png" class="padrao">
+                <div aria-hidden class="grupo-colaboradores">
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/chevrolet.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/govfederal.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/nintendo.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/samsung.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/senai.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/assai.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/mercado.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/usp-logo-png-1.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/Sedex_logo.png" class="padrao">
+                    </div>
+                    <div class="imagem-colaboradores">
+                        <img src="./imagens/Sedex_logo.png" class="padrao">
+                    </div>
                 </div>
             </div>
-            <div aria-hidden class="grupo">
-                <div class="imagem">
-                    <img src="./imagens/chevrolet.png" class="padrao">
+            <div class="teste"></div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    </section>
+
+     <section class="funcionarios">
+        <h1>Nossos colaboradores</h1>
+        <div class="guarda-cards">
+            <div class="card-funcionarios">
+                <img src="imagens/imagem_300x300.png" alt="colaborador">
+                <h3>Rai G.</h3>
+            </div>
+            <div class="card-funcionarios">
+                <img src="imagens/silas-colaborador.png" alt="colaborador">
+                <h3>Silas P.</h3>
+            </div>
+            <div class="card-funcionarios">
+                <img src="imagens/gustavo-colaborador.png" alt="colaborador">
+                <h3>Gustavo E.</h3>
+            </div>
+            <div class="guarda-cards2">
+                <div class="card-funcionarios">
+                    <div class="box">
+                        <img src="imagens/Gemini_Generated_Image_8pc3o68pc3o68pc3.png" alt="colaborador">
+                        <h3>Guilherme G.</h3>
+                    </div>
                 </div>
-                <div class="imagem">
-                    <img src="./imagens/govfederal.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/nintendo.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/samsung.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/senai.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/assai.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/mercado.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/usp-logo-png-1.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/Sedex_logo.png" class="padrao">
-                </div>
-                <div class="imagem">
-                    <img src="./imagens/Sedex_logo.png" class="padrao">
+                <div class="card-funcionarios">
+                    <div class="box">
+                        <img src="imagens/breno.png" alt="colaborador">
+                        <h3>Breno B.</h3>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="teste"></div>
-    </div>
+    </section>
 
+    <section class="sobre-nos" id="sobre-nos">
+
+        <h1>Quem somos nós?</h1>
+        <h2>Soluções digitais com foco em <br>performance e inovação</h2>
+        <p>Nossa empresa atua na criação de soluções digitais que combinam excelência técnica, <br>visão estratégica e foco em resultados mensuráveis. Trabalhamos lado a lado com nossos <br>clientes para compreender seus desafios, identificar oportunidades e desenvolver tecnologias <br>que otimizam processos, aumentam a eficiência operacional e impulsionam a inovação</p>
+        
+        <div class="card-principal">
+            <img src="imagens/card-001.png" alt="sobre nós">
+        </div>
+
+        <selection class="card-tecnologias">
+
+            <div class="card-secundario">
+                <img src="imagens/nuvem.png" alt="Computação em nuvem-img">
+                <h2>Tecnologia remota</h2>
+                <p>Computação em nuvem: sistemas online, seguros, acessíveis e escaláveis.</p>
+            </div>
+            <div class="card-secundario">
+                <img src="imagens/tecnologia.png" alt="Inteligência Artificial-img">
+                <h2>Inteligência Artificial</h2>
+                <p>Inteligência Artificial: automatiza tarefas e melhora decisões empresariais.</p>
+            </div>
+            <div class="card-secundario">
+                <img src="imagens/sistema-integrado.png" alt="Sistemas integrado-img">
+                <h2>Sistemas Integrados</h2>
+                <p>Integração de sistemas: conecta softwares e automatiza processos empresariais.</p>
+            </div>
+        </selection>
+
+        <br><br><br><br><br><br><br><br><br>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-footer">
+                        <h4>Serviços</h4>
+                        <ul class="lista">
+                            <a href="dev.html">
+                                <li>Desenvolvimento de Sistemas Sob Medida</li>
+                            </a>
+                            <a href="consult.html">
+                                <li>Consultoria em Transformação Digital</li>
+                            </a>
+                            <a href="integracao.html">
+                                <li>Integração de Sistemas</li>
+                            </a>
+                            <a>
+                                <li>Implantação e Customização de ERPs e CRMs</li>
+                            </a>
+                            <a>
+                                <li>Surporte Técnico e Manutenção Evolutiva</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-footer">
+                        <h4>Contato</h4>
+                        <ul class="lista">
+                            <li>contato@dssolutions.inf.br</li>
+                            <li>(11) 93056-9806</li>
+                            <li>
+                                <a href="https://www.instagram.com/euu.faccio/"><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a
+                                    href="https://api.whatsapp.com/send/?phone=5511930569806&text&type=phone_number&app_absent=0"><i
+                                        class="bi bi-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-footer">
+                        <h4>Endereço</h4>
+                        <ul class="lista">
+                            <li>
+                                <a class="endereco"
+                                    href="https://www.google.com/maps/place/R.+Santo+Andr%C3%A9,+680+-+Boa+Vista,+S%C3%A3o+Caetano+do+Sul+-+SP,+09572-000/@-23.6481439,-46.5610715,15.75z/data=!4m6!3m5!1s0x94ce4328ea92757b:0xccca50dd4902033b!8m2!3d-23.6441746!4d-46.5582895!16s%2Fg%2F11dzsc5qnj?hl=pt-br&entry=ttu&g_ep=EgoyMDI2MDIyMy4wIKXMDSoASAFQAw%3D%3D">
+                                    <span class="sp">São Paulo <br></span>
+                                    R. Santo André, 680
+                                    <pre>Boa Vista, São Caetano do Sul</pre> SP, 09572-000
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="barra">
+            <div class="logo-footer">
+                <img src="imagens/logo_tudo.png" class="logo-baixo">
+
+                <p class="paragrafo-footer">© 2026 - DS Solutions</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            const header = document.querySelector('.topo');
+            
+            if (window.scrollY > 350) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+    </script>
 </body>
 
 </html>

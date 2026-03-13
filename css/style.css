@@ -1,31 +1,347 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Shrikhand&display=swap');
-
-body {
-    background-image: url(../imagens/Wallpaper.jpg);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.titulo{
-    margin-top: 30px;
-    text-align: center;
-    font-family: Shrikhand;
-    font-size: 50px;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../imagens/plano_fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Century Gothic, sans-serif;
+    font-weight: bold;
+}
+
+header{
+    z-index: 1000;
+}
+
+.inicio{
+    height: 100vh;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: rgba(0, 0, 0, 0.212);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topo.scrolled {
+    background-color: rgba(3, 3, 33);
+    transition: ease-in-out 0.3s;
+}
+
+.logo {
+    height: 110px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    justify-content: center;
+    flex: 1;
+    display: flex;
+}
+
+.opcao {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: #F7F8F0;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+    transition: font-size 0.3s;
+}
+
+.menu a:hover{
+    text-shadow: 0 0 15px #F7F8F0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu a:hover::after{
+    width:100%;
+}
+
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:#F7F8F0;
+    transition:0.3s;
+}
+
+
+.topo-direita {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.orcamento-botao {
+    padding: 10px 22px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #e6e6e6, #cce1ff);
+    color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.856);
+    position: relative;
+}
+
+.orcamento-botao:hover {
+    background: linear-gradient(45deg, #7aaace, #cce1ff);
+    box-shadow: 0 0 15px #7aaace;
+    color: #fff;
+}
+
+.container-home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #F7F8F0;
+    display: inline-block;
+    margin-top: 40vh;
+    margin-left: 250px;
 }
 
 .texto {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 32px;
+}
+
+.botao-saibamais {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #355872;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    padding: 14px;
+    font-weight: bold;
+    margin-left: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botao-saibamais:hover {
+    transform: scale(1.05);
+    background-color: #7AAACE;
+    box-shadow: 0 0 15px #F7F8F0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+.servicos{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo_servicos{
+    padding-top: 105px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #355872;
+    font-weight: bold;
+}
+
+.subtitulo_servicos {
+    margin-top: 45px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.servicos-area{
+    margin-top: 120px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box_base{
+    margin-top: 30px;
+    width: 430px;
+    height: 500px;
+    border: solid 0px white;
+    border-radius: 20px;
+    background-color: #355872;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    transition: ease 0.5s;
+    
+}
+
+.servicos_box{
+    margin-top: 45px;
+    width: 250px;
+    height: 80px;
+    border-radius: 60px;
+    border: 0px;
+    margin-left: 100px;
+    background-color: #355872;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #f7f8f0;
+    align-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+.servicos_box:hover{
+    transition: ease 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px black;
+}
+
+.box_base p{
+    margin-top: 38px;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 22px;
+    color: #f7f8f0;
+    text-align: left;
+}
+
+.box_base a{
+    text-decoration: none;
+    margin-left: 130px;
+    margin-bottom: 15px;
+}
+
+.botao:hover{
+    transform: scale(1.03);
+    transition: ease 0.3s;
+    transform: rotateY(-8px);
+    background-color: #7aaace;
+    border: 3px solid #7aaace;
+    color: #f7f8f0;
+    box-shadow: 0 0 5px black;
+}
+
+.botao{
+    width: 125px;
+    height: 45px;
+    border: 3px solid #f7f8f0;
+    border-radius: 30px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #355872;
+    background-color: #f7f8f0;
+    cursor: pointer;
+}
+
+.box_base img{
+    margin-bottom: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.orcamento_box{
+    margin-top: 45px;
+    width: 250px;
+    height: 80px;
+    border-radius: 60px;
+    border: 0px;
+    margin-left: 100px;
+    background-color: #7aaace;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #f7f8f0;
+    align-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+.orcamento_box:hover{
+    transition: ease 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px black;
+
+}
+
+.background-servicos{
+    background: #fff;
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Shrikhand&display=swap');
+
+.colaboradores{
+    margin: 0;
+    padding: 0;
+}
+
+.background-colaboradores{
+    background-image: url(../imagens/Wallpaper.jpg);
+    width: 100%;
+}
+
+.titulo-colaboradores{
+    text-align: center;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 50px;
+    color: #355872;
+    padding-top: 120px;
+}
+
+.texto-colaboradores{
     margin-top: 100px;
     text-align: center;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 30px;
 }
 
-.centro {
+.centro-colaboradores{
     display: flex;
     margin-top: 170px;
     justify-content: space-around;
     
 }
 
-.carrossel {
+.carrossel-colaboradores {
     margin: 0 auto;
     padding: 20px 0;
     max-width: 1100px;
@@ -35,7 +351,7 @@ body {
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0)35%, rgb(255, 255, 255)80%);
 }
 
-.imagem {
+.imagem-colaboradores {
     display: flex;
     width: 100%;
     color: white;
@@ -53,21 +369,21 @@ body {
     width: 150px;
 }
 
-.carrossel {
+.carrossel-colaboradores {
         >* {
             flex: 0 0 100%;
         }
 }
 
-.grupo {
+.grupo-colaboradores {
     display: flex;
     gap: 20px;
     padding-right: 20px;
 }
 
-.grupo {
+.grupo-colaboradores {
     will-change: transform;
-    animation: scrolling 20s linear infinite;
+    animation: scrolling 30s linear infinite;
 }
 
 @keyframes scrolling {
@@ -80,12 +396,248 @@ body {
     }
 }
 
-
 .teste {
     position: absolute;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0)35%, rgb(255, 255, 255)80%);
     width: 1270px;
     height: 280px;
-    
     border-radius: 15px;
+}
+
+.funcionarios {
+    background: linear-gradient(to bottom, #7aaace);
+    padding: 190px 60px;
+    text-align: center;
+}
+
+.funcionarios h1 {
+    font-size: 60px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+    margin-bottom: 80px;
+    font-weight: bold;
+    padding: -30px;
+}
+
+.guarda-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: center;
+}
+
+.guarda-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    gap: 70px;
+}
+
+.card-funcionarios{
+    background: #f7f3ed;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+
+}
+
+.card-funcionarios:hover{
+    transform: translateY(-10px);
+}
+.card-funcionarios img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.card-funcionarios h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+.card-funcionarios p {
+    color: #666;
+    font-size: 14px;
+}
+
+.guarda-cards2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.guarda-cards2 {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    gap: 70px;
+    margin-left: 170px;
+}
+
+.sobre-nos {
+    background-color: #ffffff;
+    font-weight: normal;
+}
+
+.sobre-nos h1 {
+    text-align: center;
+    color: #355872;
+    padding: 10px;
+    margin-bottom: 80px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 40px;
+    padding-top: 110px;
+}
+
+.sobre-nos h2 {
+    margin-left: 380px;
+    font-size: 30px; 
+}
+
+.sobre-nos p {
+    font-size: large;
+    padding: 20px;
+    margin-left: 360px;
+    
+    
+}
+.card-principal {
+    background-color: #355872 ;
+    border-radius: 20px;
+    width: 210px;
+    height: 210px;
+    margin-left: 1220px;
+    margin-top: -250px;
+    box-shadow: 3px 3px 15px black;
+}
+
+.card-principal img {
+    border-radius: 15px;
+    width: 230px;
+}
+
+.card-secundario {
+    background-color: #7aaace;
+    margin: auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 120px;
+    margin-top: 68px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-secundario img {
+    width: 100px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+.card-secundario h2 {
+    width: 260px;
+    margin-top: -120px;
+}
+
+.card-tecnologias {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 120px;
+    margin-right: 120px;
+}
+
+.card-tecnologias h2 {
+    margin-left: 150px;
+    margin-top: -120px;
+}
+
+.card-tecnologias p {
+    width: 250px;
+    line-height: 1.0;
+    text-align: justify;
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.container-footer {
+    color: #F7F8F0;
+    display: inline-block;
+    margin-left: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer {
+    background-color: #487da3;
+    color: #F7F8F0;
+    padding: 40px 0;
+    background: linear-gradient(360deg, rgb(3, 3, 33), rgb(5, 5, 54));
+}
+
+.row {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    color: #F7F8F0;
+}
+
+.row h4 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #F7F8F0;
+    cursor: default;
+}
+
+.col-footer {
+    list-style-type: none;
+    font-size: 18px;
+    padding: 20px;
+    justify-content: space-between;
+    font-weight: lighter;
+}
+
+.col-footer li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.col-footer i {
+    margin-right: 10px;
+}
+
+.sp {
+    font-weight: bold;
+}
+
+.barra {
+    background: rgb(3, 3, 33);
+    color: #fff;
+    align-items: center;
+    position: relative;
+}
+
+.logo-footer {
+    text-align: center;
+    justify-content: center;
+}
+
+.logo-baixo {
+    height: 150px;
+    margin-bottom: -50px;
+
+}
+
+.paragrafo-footer {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    flex: 1;
+    padding-bottom: 25px;
 }
